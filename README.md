@@ -1,4 +1,6 @@
-# Deltamod XML standard
+_Valid for Deltamod, version 1.0_
+
+# Deltamod Standard
 This file includes information on how a Deltamod modpack should be structured.
 
 ## Basic rules of the format.
@@ -28,7 +30,11 @@ There should be 3 files (1 optional) dedicated to mod metadata and patching data
 ```
 This is an example on how a `_deltamodInfo.json` should be structured. Deltamod checks the file is valid before loading the mod. Missing or corrupted fields will be replaced by a placeholder. 
 
-The `neededFiles` parameter can help you define files needed for your mod to function, but also check if they're the same files you have on your computer.<br /> When specifying a needed file, you'll need to specify it's name (examples: `data.win`, `chapter1_windows/data.win`) and its checksum. <br />To calculate a checksum of a file you can simply open it [here](https://emn178.github.io/online-tools/sha256_checksum.html).
+### `neededFiles`
+The `neededFiles` parameter can help you define files needed for your mod to function, but also check if they're the same files you have on your computer.<br /> <br />
+When specifying a needed file, you'll need to specify it's name (examples: `data.win`, `chapter1_windows/data.win` if it is in a subfolder) and its checksum. <br /><br />
+To calculate a checksum of a file you can simply open it [here](https://emn178.github.io/online-tools/sha256_checksum.html).
+**If you specify a needed file, it is required to add a checksum along it.**
 
 ## `modding.xml`
 
