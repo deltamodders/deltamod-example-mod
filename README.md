@@ -46,6 +46,15 @@ To calculate a checksum of a file you can simply open it [here](https://emn178.g
 This is an example on how a `modding.xml` should be correctly structured. There are currently 2 types of patch: xdelta (which inputs the file through GM3P in order to patch the requested file) and override (which simply replaces the file.)<br /><br />
 Every patch tag has three necessary fields: `patch`, `to` and `type`. If there are any missing/invalid fields, the program will delete the mod from its database and notify the user that the modpack is corrupted.
 
+## Packing in ZIP
+Deltamod only supports .ZIP archives. They also must be packaged like so:
+```
+.
+└── (root of ZIP file)/
+    ├── _deltamodInfo.json
+    ├── modding.xml
+    ├── icon.png
+    └── (any needed patch file)
+```
 ## License
-
 This standard is licensed under a modified version of the EUPL, _EUPL-1.2-DELTAMOD_. Read it [here](./LICENSE.txt)
