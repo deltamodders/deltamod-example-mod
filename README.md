@@ -53,7 +53,7 @@ Deltamod only supports .ZIP archives. They also must be packaged like so:
 └── (root of ZIP file)/
     ├── _deltamodInfo.json
     ├── modding.xml
-    ├── icon.png
+    ├── _icon.png
     └── (any needed patch file)
 ```
 ## License
