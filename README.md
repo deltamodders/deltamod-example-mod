@@ -23,7 +23,7 @@ There should be 3 files (1 optional) dedicated to mod metadata and patching data
     "neededFiles": [
         {
             "file": "data.win",
-            "checksum": "YOUR CHECKSUM HERE"
+            "checksum": "YOUR SHA256 CHECKSUM HERE"
         }
     ]
 }
