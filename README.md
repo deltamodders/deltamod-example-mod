@@ -45,11 +45,11 @@ You can use checksumming to check, for example, if your user has the same Deltar
 This is an example on how a `modding.xml` should be correctly structured. There are currently 2 types of patch: **xdelta** _(which inputs the file through GM3P in order to patch the requested file)_ and **override** (which simply replaces the file)<br /><br />
 Every patch tag has three necessary fields: `patch`, `to` and `type`. If there are any missing/invalid fields, the program will invalidate that specific patch.
 
-## Packing in ZIP
-Deltamod only supports .ZIP archives. They also must be packaged like so:
+## Packing an Archive
+Deltamod supports .ZIP, .7Z, .TAR.GZ and .LZMA archives. They must be packaged like so:
 ```
 .
-└── (root of ZIP file)/
+└── (root of the archive)/
     ├── _deltamodInfo.json
     ├── modding.xml
     ├── _icon.png
