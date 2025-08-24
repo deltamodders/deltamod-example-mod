@@ -1,4 +1,4 @@
-_Valid for Deltamod, version 1.0_
+_Valid for Deltamod, version 1.1.1_
 
 # Deltamod Standard
 This file includes information on how a Deltamod modpack should be structured.
