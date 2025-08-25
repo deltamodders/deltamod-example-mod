@@ -30,6 +30,8 @@ There should be 3 files (1 of which optional) dedicated to mod metadata and patc
 ```
 This is an example on how a `_deltamodInfo.json` should be structured. Deltamod checks the file is valid before loading the mod. 
 
+<b>IMPORTANT NOTE: </b> The version must be semantic versioning, otherwise the UI will display it as "1.0.0".
+
 ### `neededFiles`
 In the `neededFiles` array, you can make sure your Deltarune files are the same ones as the ones on your user's computer.<br /><br />
 For example, you can specify the **SHA256 checksum** to look for in the Chapter 4 `data.win`. Look at this graph:<br /><br />
