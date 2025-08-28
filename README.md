@@ -18,7 +18,8 @@ There should be 3 files (1 of which optional) dedicated to mod metadata and patc
         "version": "1.0.0",
         "description": "Lorem ipsum",
         "author": ["Mod Developer 1", "Mod Developer 2"],
-        "demoMod": true
+        "demoMod": true,
+        "packageID": "site.mod.author"
     },
     "neededFiles": [
         {
@@ -30,7 +31,16 @@ There should be 3 files (1 of which optional) dedicated to mod metadata and patc
 ```
 This is an example on how a `_deltamodInfo.json` should be structured. Deltamod checks the file is valid before loading the mod. 
 
-<b>IMPORTANT NOTE: </b> The version must be semantic versioning (examples: "1.0.0", "1.1.0", "2.0.0"), otherwise the UI will display it as "1.0.0".
+### `packageID`
+Starting with Deltamod <i>1.2</i>, all Deltamod mods should have an unique `packageID`.<br /><br />
+_The system works similarly to the Android system, where for example Minecraft is assigned the ID `com.mojang.minecraftpe`.<br /><br />_
+You can format your packageID like so: 
+```
+website.modname.authorname
+```
+Remember that dots cannot be entered in any of the fields as they are a reserved character. Only use them for separating the blocks.<br /><br />
+If you don't want to specify one or more of the package parts (like your username, website name or mod name) just replace the values with `und`. <b>If all three parts are `und`, making a package ID `und.und.und` Deltamod will consider the ID invalid.</b><br /><br />
+If an ID is invalid or missing, Deltamod will generate one based on the already present information.
 
 ### `neededFiles`
 In the `neededFiles` array, you can make sure your Deltarune files are the same ones as the ones on your user's computer.<br /><br />
