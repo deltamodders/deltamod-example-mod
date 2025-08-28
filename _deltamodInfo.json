@@ -5,7 +5,7 @@
         "description": "Lorem ipsum",
         "author": ["Mod Developer 1", "Mod Developer 2"],
         "demoMod": true,
-        "packageID": "website.author.mod"
+        "packageID": "website.mod.author"
     },
     "neededFiles": [
         {
