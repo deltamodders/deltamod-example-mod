@@ -34,9 +34,12 @@ There should be 3 files (1 of which optional) dedicated to mod metadata and patc
 ```
 This is an example on how a `_deltamodInfo.json` should be structured. Deltamod checks the file is valid before loading the mod. 
 
-### DELTAHUB-specific fields
-Starting with Deltamod <i>1.2</i>, the format will be also implemented in DELTAHUB. To accomodate DELTAHUB's needed files, some new fields are required specifically for DELTAHUB.<br /><br />
-The `url`, `tags` and `deltaruneTargetVersion` are new fields introduced by the standard merge with DELTAHUB, and are needed for your mod to function with DELTAHUB properly. Deltamod does not require them since they will get filled out if missing, however we suggest you add them to also add support with <b>DELTAHUB</b>.
+# DELTAHUB-specific fields
+Starting with Deltamod <i>1.2</i>, this mod format will be also implemented in [**DELTAHUB**](https://gamebanana.com/tools/20615).<br /><br /> As part of our deal to merge formats, we've added new fields needed for **DELTAHUB** to function. While Deltamod does not require these strictly, it is reccomended to add them, even if you don't want to make your mod compatible with DELTAHUB.<br /><br />
+You will need to add the `url`, `tags` and `deltaruneTargetVersion` fields. 
+- The `url` field is just a link to your mod page.
+- The `tags` field is an array of tags that describe your mod. Please try to use generic ones as to make searching by tagging easier. (Music, Sprites, ecc.)
+- The `deltaruneTargetVersion` is the DELTARUNE version needed by your mod. Deltamod does not perform checks on target version, but instead uses `neededFiles`.
 
 ### `packageID`
 Starting with Deltamod <i>1.2</i>, all Deltamod mods should have an unique `packageID`.<br /><br />
