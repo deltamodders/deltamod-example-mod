@@ -56,7 +56,8 @@ If an ID is invalid or missing, Deltamod will generate one based on the already 
 In the `neededFiles` array, you can make sure your Deltarune files are the same ones as the ones on your user's computer.<br /><br />
 For example, you can specify the **SHA256 checksum** to look for in the Chapter 4 `data.win`. Look at this graph:<br /><br />
 <img width="591" height="221" alt="d1" src="https://github.com/user-attachments/assets/e0476db0-7ba3-4150-8bfb-70779db81805" /><br /><br />
-You can use checksumming to check, for example, if your user has the same Deltarune version as you.
+You can use checksumming to check, for example, if your user has the same Deltarune version as you.<br /><br />
+<i>To get a file's SHA256 hash, you can drop it [here](https://emn178.github.io/online-tools/sha256_checksum.html).</i>
 ## `modding.xml`
 
 ```xml
