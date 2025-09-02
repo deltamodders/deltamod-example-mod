@@ -5,8 +5,11 @@
         "description": "Lorem ipsum",
         "author": ["Mod Developer 1", "Mod Developer 2"],
         "demoMod": true,
-        "packageID": "website.mod.author"
+        "packageID": "website.mod.author",
+        "url": "https://example.com",
+        "tags": []
     },
+    "deltaruneTargetVersion": "1.0.0",
     "neededFiles": [
         {
             "file": "data.win",

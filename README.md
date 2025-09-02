@@ -19,17 +19,24 @@ There should be 3 files (1 of which optional) dedicated to mod metadata and patc
         "description": "Lorem ipsum",
         "author": ["Mod Developer 1", "Mod Developer 2"],
         "demoMod": true,
-        "packageID": "site.mod.author"
+        "packageID": "website.mod.author",
+        "url": "https://example.com",
+        "tags": []
     },
+    "deltaruneTargetVersion": "1.04",
     "neededFiles": [
         {
             "file": "data.win",
-            "checksum": "YOUR SHA256 CHECKSUM HERE"
+            "checksum": "YOUR CHECKSUM HERE"
         }
     ]
 }
 ```
 This is an example on how a `_deltamodInfo.json` should be structured. Deltamod checks the file is valid before loading the mod. 
+
+### DELTAHUB-specific fields
+Starting with Deltamod <i>1.2</i>, the format will be also implemented in DELTAHUB. To accomodate DELTAHUB's needed files, some new fields are required specifically for DELTAHUB.<br /><br />
+The `url`, `tags` and `deltaruneTargetVersion` are new fields introduced by the standard merge with DELTAHUB, and are needed for your mod to function with DELTAHUB properly. Deltamod does not require them since they will get filled out if missing, however we suggest you add them to also add support with <b>DELTAHUB</b>.
 
 ### `packageID`
 Starting with Deltamod <i>1.2</i>, all Deltamod mods should have an unique `packageID`.<br /><br />
